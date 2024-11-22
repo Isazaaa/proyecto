@@ -1,0 +1,245 @@
+/* Estilos generales */
+.container {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    height: 110vh;
+    background-color:  #FFF4F4;
+  }
+
+  
+  /* Sección izquierda */
+  .left-section {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 54%;
+    height:110%;
+    position: relative;
+    top: -2rem;
+    left: -12rem;
+    
+    background-color:  white;
+    
+  }
+  .logoformulario{
+    width: 68%;
+    height: auto;
+    margin-bottom: -160px;
+    position: relative;
+    top: -15em;
+    left: 7rem;
+  }
+  
+ 
+  
+  .image {
+    width: 100px;
+    margin-bottom: 90px;
+    position: relative;
+    left: 5rem;
+    top: 1rem;
+    display: grid;
+    grid-row: auto;
+  }
+  
+/* Sección derecha */
+.right-section {
+  width: 80%;
+  height: 46%;
+  display: flex;
+  justify-content: space-between;
+  gap: 6px; /* Espacio entre formularios */
+}
+
+
+
+.form {
+  background: white;
+  padding: 20px;
+  border-radius: 18px;
+  box-shadow: 0 4px 8px #877CC7 ;
+  width: 150%;
+  border: 2px dotted#877CC7; /* Borde punteado */
+  max-width: 500px;
+  gap: 2px;
+  position: relative;
+  top: 4rem;
+}
+
+h2 {
+  margin-bottom: 30px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  display: block;
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 15px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+button {
+  padding: 10px;
+  margin-right: 10px;
+  background-color:#877CC7 ;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #877CC7 ;
+}
+
+.delete-btn {
+  background-color: #877CC7 ;
+}
+
+.delete-btn:hover {
+  background-color: #877CC7 ;
+}
+.h1titulo{
+  color:#877CC7 ;
+  position: relative;
+  top: -6rem;
+  left: 7rem;
+  text-align: center;
+  align-items: center;
+  font-size: 10px;
+}
+
+
+/* Para pantallas pequeñas (celulares) */
+@media (max-width: 480px) {
+  .container {
+      flex-direction: column; /* Apilar las secciones verticalmente */
+      padding: 10px;
+      height: auto;
+  }
+
+  .left-section, .right-section {
+      width: 100%; /* Ocupa el 100% del ancho en pantallas pequeñas */
+      height: auto;
+      position: relative;
+      top: 0;
+      left: 0;
+  }
+
+  .logoformulario {
+      width: 50%; /* Ajustar el tamaño del logo */
+      margin-bottom: -30px;
+      left: 0;
+      top: 0;
+  }
+
+  .right-section {
+      flex-direction: column; /* Apilar los formularios verticalmente */
+      gap: 20px; /* Espacio entre formularios */
+  }
+
+  .form {
+      width: 100%; /* El formulario ocupará el 100% del ancho */
+      max-width: 100%;
+      padding: 15px;
+      top: 0; /* Eliminar margen superior */
+  }
+
+  .h1titulo {
+      font-size: 16px;
+      top: 0;
+      left: 0;
+  }
+
+  button {
+      width: 100%; /* El botón ocupará todo el ancho */
+      margin: 10px 0;
+  }
+
+  /* Reducir tamaños de fuente para dispositivos pequeños */
+  h2 {
+      font-size: 18px;
+  }
+
+  label {
+      font-size: 14px;
+  }
+
+  input {
+      font-size: 14px;
+      padding: 8px;
+  }
+
+  button {
+      font-size: 16px;
+  }
+}
+
+/* Para pantallas ligeramente más grandes (hasta 768px, como en tabletas) */
+@media (max-width: 768px) {
+  .container {
+      flex-direction: column; /* Apilar las secciones verticalmente */
+      padding: 15px;
+      height: auto;
+  }
+
+  .left-section, .right-section {
+      width: 100%; /* Ocupa el 100% del ancho en pantallas más pequeñas */
+      height: auto;
+  }
+
+  .logoformulario {
+      width: 70%; /* Ajustar el tamaño del logo */
+      margin-bottom: -30px;
+      left: 0;
+  }
+
+  .right-section {
+      flex-direction: column; /* Apilar los formularios verticalmente */
+      gap: 20px;
+  }
+
+  .form {
+      width: 100%; /* El formulario ocupará el 100% del ancho */
+      max-width: 90%;
+      padding: 15px;
+      top: 0;
+  }
+
+  .h1titulo {
+      font-size: 18px;
+      top: 0;
+      left: 0;
+  }
+
+  /* Ajustar tamaño de los botones */
+  button {
+      width: 100%;
+      margin: 10px 0;
+  }
+
+  h2 {
+      font-size: 20px;
+  }
+
+  label {
+      font-size: 16px;
+  }
+
+  input {
+      font-size: 16px;
+      padding: 10px;
+  }
+
+  button {
+      font-size: 18px;
+  }
+}
